@@ -1,5 +1,3 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
@@ -7,7 +5,7 @@
     rel="stylesheet">
 <link rel="stylesheet"
     href="https://www.ros.net.pl/Portals/0/rich-content/maybelline/sky-high/css/swiper-bundle.min.css">
-<link rel="stylesheet" href="https://www.ros.net.pl/Portals/0/rich-content/maybelline/sky-high/css/style.min.css">
+<link rel="stylesheet" href="https://www.ros.net.pl/Portals/0/rich-content/maybelline/sky-high/css/style.css">
 
 <div id="es-rc">
     <div id="es-rc-content">
@@ -564,39 +562,39 @@
 <script src="https://www.ros.net.pl/Portals/0/rich-content/maybelline/sky-high/scripts/swiper-bundle.min.js">
 </script>
 <script>
-    if (!document.querySelector('.es-swiper1').classList.contains('swiper-initialized')) {
-        const swiper = new Swiper('.es-swiper1', {
+    (() => {
+        const swiper = new Swiper('#es-rc .es-swiper1', {
             // Optional parameters
             loop: true,
             autoHeight: true,
             // autoplay: true,
 
             pagination: {
-                el: '.es-swiper1-pagination',
+                el: '#es-rc .es-swiper1-pagination',
                 clickable: true,
             },
 
             navigation: {
-                nextEl: '.es-swiper1-button-next',
-                prevEl: '.es-swiper1-button-prev',
+                nextEl: '#es-rc .es-swiper1-button-next',
+                prevEl: '#es-rc .es-swiper1-button-prev',
             },
         });
-    }
-    if (!document.querySelector('.es-swiper2').classList.contains('swiper-initialized')) {
-        const swiper2 = new Swiper('.es-swiper2', {
+
+
+        const swiper2 = new Swiper('#es-rc .es-swiper2', {
             // Optional parameters
             loop: true,
             autoHeight: true,
             // autoplay: true,
 
             pagination: {
-                el: '.es-swiper2-pagination',
+                el: '#es-rc .es-swiper2-pagination',
                 clickable: true,
             },
 
             navigation: {
-                nextEl: '.es-swiper2-button-next',
-                prevEl: '.es-swiper2-button-prev',
+                nextEl: '#es-rc .es-swiper2-button-next',
+                prevEl: '#es-rc .es-swiper2-button-prev',
             },
             breakpoints: {
                 0: { // For screens 0px and wider
@@ -613,6 +611,6 @@
                 },
             },
         });
-    }
+    })()
 
 </script>
